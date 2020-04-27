@@ -103,7 +103,7 @@ describe('Mercator', function() {
     });
 
     it('should detect +over stripped', function() {
-        var val = '+proj=merc +lon_0=0 +lat_ts=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs';
+        var val = '+proj=merc +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs';
         var parsed = srs.parse(val);
         assert.ok(parsed.proj4);
         //assert.equal(parsed.proj4,'');
@@ -260,7 +260,7 @@ describe('Mercator', function() {
     });
 
     it('should detect bogus proj 2', function() {
-        var val = '+proj=merc +lon_0=0 +lat_ts=0 +x_0=0 +y_0=0 +a=6378137 +b=6378137 +units=m';
+        var val = '+proj=merc +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +a=6378137 +b=6378137 +units=m';
         var parsed = srs.parse(val);
         assert.ok(parsed.proj4);
         //assert.equal(parsed.proj4,'');
