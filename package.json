@@ -20,7 +20,7 @@
     "url": "git://github.com/mapbox/node-srs.git"
   },
   "dependencies": {
-    "gdal-next": "~1.0.2"
+    "gdal-next": ">=2.0"
   },
   "author": "Dane Springmeyer <dane@mapbox.com>",
   "licenses": [
